@@ -1,0 +1,22 @@
+.content {
+    min-height: 628px;
+}
+
+.hide {
+    display: none;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+    border-radius: 20px;
+}
+
+.toggle.ios .toggle-handle {
+    border-radius: 20px;
+}
+
+.selected {
+    box-shadow: 0 0 0 .2rem rgba(16, 150, 170, 0.897);
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
