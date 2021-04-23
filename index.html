@@ -18,22 +18,26 @@
         <div class="col-sm-8 col-12 text-center bg-light rounded border border-dark mx-auto content">
             <div class="row">
                 <div class="col">
+                    <div id="notation-toggle-box">
+                        <p>Notación:</p>
+                        <button id="notation-toggle" class="btn btn-outline-info">Latina</button>
+                    </div>
                     <h4 class="p-2 mt-2">¿En qué tonalidad estás?</h4>
-
+                        
                     <div class="btn-toolbar p-lg-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group-justified mx-auto" role="group" aria-label="First group" id="notes-buttons">
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">C</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">Db</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">D</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">Eb</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">E</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">F</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">Gb</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">G</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">Ab</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">A</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">Bb</button>
-                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2">B</button>
+                        <div class="btn-group-justified mx-auto notes-buttons" role="group" aria-label="First group" id="notes-buttons">
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="C">C</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Db">Db</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="D">D</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Eb">Eb</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="E">E</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="F">F</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Gb">Gb</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="G">G</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Ab">Ab</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="A">A</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Bb">Bb</button>
+                            <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="B">B</button>
                         </div>
                     </div>
                 </div>
@@ -43,10 +47,10 @@
                     <h4 class="p-lg-3 mt-2">¿Para qué instrumento quieres transponer?</h4>
                     <div class="btn-toolbar p-lg-3" role="toolbar" aria-label="Toolbar with button groups">
                         <div class="btn-group-justified mr-2 mx-auto" role="group" aria-label="First group" id="inst-buttons">
-                            <button type="button" class="btn btn-block btn-outline-info p-0"><p class="fs-1"></p><span>Bb</span>
+                            <button type="button" class="btn btn-block btn-outline-info p-0" id="Bb"><span>Bb</span>
                                 <br>Trompeta, Clarinete,<br> Saxo soprano, Saxo tenor
                             </p></button>
-                            <button type="button" class="btn btn-block btn-outline-info"><span>Eb</span><br>Saxo Alto, Saxo Barítono,<br> Clarinete requinto</button>
+                            <button type="button" class="btn btn-block btn-outline-info" id="Eb"><span>Eb</span><br>Saxo Alto, Saxo Barítono,<br> Clarinete requinto</button>
                         </div>
                     </div>
                 </div>

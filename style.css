@@ -22,7 +22,13 @@
   box-shadow: 0 0 0 0.2rem rgba(16, 150, 170, 0.897);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
+#notation-toggle-box{
+  float: right;
+}
+#notation-toggle{
+  font-size: 12px;
+  width: 100px;
+}
 @media (max-width: 500px) {
   .content {
     height: 550px !important;
