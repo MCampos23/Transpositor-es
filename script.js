@@ -65,10 +65,8 @@ function transpose(note, inst) {
     if (anglo=true)
     showResult.innerText = notes[result]
     else{
-
         showResult.innerText = latinNotes[result]
     }
-
   }
 }
 
