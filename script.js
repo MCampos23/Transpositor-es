@@ -1,18 +1,5 @@
 const notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
-const latinNotes = [
-  "Do",
-  "Reb",
-  "Re",
-  "Mib",
-  "Mi",
-  "Fa",
-  "Solb",
-  "Sol",
-  "Lab",
-  "La",
-  "Sib",
-  "Si",
-];
+const latinNotes = [ "Do", "Reb", "Re", "Mib", "Mi", "Fa", "Solb", "Sol", "Lab", "La", "Sib", "Si"];
 let notesButtons = Array.from(
   document.querySelectorAll("#notes-buttons button")
 );
