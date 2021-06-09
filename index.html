@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transpositor</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Transposer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-info">
     <header>
-        <h1 class="text-center p-3">Transpositor</h1>
+        <h1 class="text-center p-3">Transposer</h1>
     </header>
     <div class="container">
         <div class="col-sm-8 col-12 text-center bg-light rounded border border-dark mx-auto content">
             <div class="row">
-                <div class="col">
-                    <div id="notation-toggle-box">
-                        <p>Notación:</p>
-                        <button id="notation-toggle" class="btn btn-outline-info">Latina</button>
-                    </div>
-                    <h4 class="p-2 mt-2">¿En qué tonalidad estás?</h4>
-                        
+                <div class="col mt-5">
+                    <h4 class="p-2 mt-2">Wich is the original key?</h4>
+
                     <div class="btn-toolbar p-lg-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group-justified mx-auto notes-buttons" role="group" aria-label="First group" id="notes-buttons">
+                        <div class="btn-group-justified mx-auto notes-buttons" role="group" aria-label="First group"
+                            id="notes-buttons">
                             <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="C">C</button>
                             <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="Db">Db</button>
                             <button type="button" class="btn btn-outline-info m-lg-2 m-1 p-2" id="D">D</button>
@@ -42,13 +42,18 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h4 class="p-lg-3 mt-2">¿Para qué instrumento quieres transponer?</h4>
+                    <h4 class="p-lg-3 mt-2">What instrument do you play?</h4>
                     <div class="btn-toolbar p-lg-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group-justified mr-2 mx-auto" role="group" aria-label="First group" id="inst-buttons">
-                            <button type="button" class="btn btn-block btn-outline-info p-0" id="Bb"><span>Bb</span>
-                                <br>Trompeta, Clarinete,<br> Saxo soprano, Saxo tenor
-                            </p></button>
-                            <button type="button" class="btn btn-block btn-outline-info" id="Eb"><span>Eb</span><br>Saxo Alto, Saxo Barítono,<br> Clarinete requinto</button>
+                        <div class="d-flex mr-2 mx-auto" role="group" aria-label="First group"
+                            id="inst-buttons">
+                            <button type="button" class="btn m-2 btn-outline-info" id="Bb">
+                                <b>Bb</b>
+                                <br>Trumpet, Clarinet,<br> Soprano Sax, Tenor Sax
+                                </p>
+                            </button>
+                            <button type="button" class="btn m-2 btn-outline-info" id="Eb">
+                                <b>Eb</b><br>Alto Sax, Baritone Sax.
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +61,7 @@
             <div class="row">
                 <div class="col">
                     <p>
-                        <h4>Resultado:</h4> <button class="btn btn-lg btn-outline-info hide" id="showResult"></button></p>
+                    <h4>Result:</h4><button class="btn btn-lg mt-2 btn-outline-info" id="showResult">?</button></p>
                 </div>
             </div>
         </div>
@@ -64,9 +69,15 @@
     <script src="script.js"></script>
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap toggle -->
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
