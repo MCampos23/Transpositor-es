@@ -3,7 +3,7 @@ const notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 let notesButtons = Array.from(document.querySelectorAll("#notes-buttons button"));
 let instButtons = Array.from(document.querySelectorAll("#inst-buttons button"));
 
-let showResult = document.querySelector("#showResult");
+let resultBtn = document.querySelector("#resultBtn");
 
 let note;
 let inst;
@@ -27,9 +27,12 @@ function transpose(note, inst) {
   if (inst != undefined && note != undefined) {
     let result = note + inst;
     if (result > 11) result -= 12;
-    showResult.classList.remove("hide");
-    showResult.innerText = notes[result];
+    showResult(result)
   }
+}
+
+function showResult(result){
+  resultBtn.innerText = notes[result];
 }
 
 programButtons(notesButtons)
